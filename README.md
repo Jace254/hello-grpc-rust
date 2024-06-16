@@ -1,4 +1,4 @@
-# GRPc in RUST
+# gRPC in RUST
 
 ## Pre-requisites
 
