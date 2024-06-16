@@ -4,7 +4,6 @@ use std::path::PathBuf;
 fn main() -> Result<(), Box<dyn std::error::Error>> {
    let proto_file = "./proto/store.proto";
    let out_dir = PathBuf::from(env::var("OUT_DIR").unwrap());
-   std::env::set_var("PROTOC", "C:\\Users\\Joash\\protoc\\bin\\protoc.exe");
 
    tonic_build::configure()
            .protoc_arg("--experimental_allow_proto3_optional") // for older systems
