@@ -135,7 +135,7 @@ impl Inventory for StoreInventory {
         };
 
         // retrieve the stock mutable so we can update the quantity
-        let mut stock = match item.stock.borrow_mut() {
+        let stock = match item.stock.borrow_mut() {
             Some(stock) => stock,
             None => return Err(Status::internal(NO_STOCK_ERR)),
         };
@@ -180,7 +180,7 @@ impl Inventory for StoreInventory {
         };
 
         // retrieve the stock mutable so we can update the quantity
-        let mut stock = match item.stock.borrow_mut() {
+        let stock = match item.stock.borrow_mut() {
             Some(stock) => stock,
             None => return Err(Status::internal(NO_STOCK_ERR)),
         };
