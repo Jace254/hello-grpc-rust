@@ -3,7 +3,7 @@
 ## Pre-requisites
 
 - Ensure you have [Rust](https://www.rust-lang.org/tools/install) installed.
-- [Install](https://protobuf.dev/downloads/#release-packages) and set PROTOC=`C:/protoc/bin/protoc.exe` on your PATH if you're on windows.
+- [Install](https://protobuf.dev/downloads/#release-packages) and set PROTOC=`C:/protoc/bin/protoc.exe` on your SYSTEM VARIABLES if you're on windows.
 - Otherwise follow steps described [here](https://grpc.io/docs/protoc-installation/).
 
 ## Development
